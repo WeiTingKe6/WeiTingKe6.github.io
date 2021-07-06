@@ -1,0 +1,72 @@
+/* CSS(Cascading Stylesheets) : 風格頁面語言,
+在 HTML 文件中的元素（element）上套用不同的頁面樣式（style）  */
+
+html {
+    font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+    font-family: 'Otomanopee One', sans-serif;
+    /* google fonts 字體設定 */
+    
+    background-color:#f7dc6f;
+    /* 調整背景顏色 */
+  }
+  
+
+li {
+    color: rgb(180, 130, 238);
+/* 這裡的li是選擇器（Selector）,代表我選擇HTML中的p(paragraph),並設定為紅色,
+若要改變欲影響的元素，只要更改選擇器就行了*/
+/* color是屬性 (Properties); red是屬性值 (Property value);
+color: red 是宣告（Declaration）,不同宣告要用分號(;)來做區分*/
+    width: 500px;
+    border: 1px solid black; 
+    /* border : 外框線 solid :代表實線 */
+}
+
+img[src] {
+    border: 5px solid rgb(180, 130, 238);
+    margin: 0 auto; 
+    display: block;
+    /* display: block 是給予圖片(原為內聯元素)具有塊級元素行為,才可以使用
+    margin等塊級功能調整其位置, */
+    /* 也可以透過width調整圖片大小 */
+}
+/* 控制 <img src="images/2015110969829025.jpg"> ,外圍有框框 */
+   
+h1 {
+    margin: 0;
+    /* 沒有用margin標題上方會有預設的間隙 */
+    padding: 20px 0 ;
+    /* 上方設定20px的空間 */
+    font-size: 60px;
+    text-align: center; 
+    /* text-align:文字位置 */
+    text-shadow: 5px 3px 1px black;
+    /*text-shadow 第一個值:水平偏移值(陰影右移)
+    第二個值:垂直偏移值(陰影向下)
+    第三個值:陰影的模糊半徑(值越大越模糊)
+    第四個值:陰影的基色
+   */
+   color: rgb(180, 130, 238);
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    /* 行高、間距等 */
+}
+
+body {
+    width: 17.4cm;
+    margin: 0 auto;
+    /* margin設定時,第一個值代表element的上方或下方,
+    第二個值代表左邊或右邊,
+    auto代表水平方向左右對稱 */
+    background-color: #E6224A;
+    padding: 0 20px 20px 20px;
+    /* padding: 內邊距 可設定4個值讓內容周邊產生一點空間,順序: 上 右 下 左
+    本次不設定上方,設置左、右、下方20px */
+    border: 5px solid black;
+
+
+}
